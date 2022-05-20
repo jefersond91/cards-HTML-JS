@@ -78,5 +78,14 @@ const users = [
   },
 ];
 
-const container = document.getElementById('user-container');
+const container = document.getElementById("user-container");
 // console.log(container);
+container.innerHTML = `
+    <div class="user-card">
+        <h3>NOMBRE DE USUARIO</h3>
+        <h4>EDAD: 00</h4>
+        <h4>EMAIL: email@email</h4>
+        <a href="facebook.com">Facebook</a>
+        <a href="twitter.com">Twitter</a>
+    </div>
+`
