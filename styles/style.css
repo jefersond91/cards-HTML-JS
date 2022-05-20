@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #eeeeea;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.user-card{
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 500px;
+    margin: 1rem auto;
+    box-shadow: 10px 10px 10px 10px #e6e6e0;
+}
