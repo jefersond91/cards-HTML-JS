@@ -80,12 +80,18 @@ const users = [
 
 const container = document.getElementById("user-container");
 // console.log(container);
-container.innerHTML = `
-    <div class="user-card">
-        <h3>NOMBRE DE USUARIO</h3>
-        <h4>EDAD: 00</h4>
-        <h4>EMAIL: email@email</h4>
-        <a href="facebook.com">Facebook</a>
-        <a href="twitter.com">Twitter</a>
-    </div>
-`
+let fragmentFake = ``
+for(let i = 0; i < users.length; i++ ){
+    // crear los elementos y agregar contenido a estos
+    fragmentFake += `
+        <div class="user-card">
+            <h3>${users[i].name}</h3>
+            <h4>EDAD: ${users[i].age}</h4>
+            <h4>EMAIL: ${users[i].email}</h4>
+            <a href="facebook.com">${users[i].social[0].name}</a>
+            <a href="twitter.com">${users[i].social[1].name}</a>
+        </div>
+    `
+}
+
+container.innerHTML = fragmentFake
