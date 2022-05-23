@@ -95,3 +95,7 @@ for(let i = 0; i < users.length; i++ ){
 }
 
 container.innerHTML = fragmentFake
+
+for ( let elemento of users){
+    console.log(elemento.name)
+}
